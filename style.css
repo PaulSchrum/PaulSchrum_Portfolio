@@ -75,8 +75,8 @@ ul {padding: 0 2em 1.2em;}
 
 .header {
 	border-top: 2px solid #663;
-	background: #DAD7C5 url(img/header.jpg) no-repeat left bottom;
-	height: 220px;
+	background: #DAD7C5 url("img/The Trig Functions Graph.jpg") no-repeat center top;
+	height: 236px;
 }
 
 /* navigation */
