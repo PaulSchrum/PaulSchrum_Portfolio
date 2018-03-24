@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<h1>GIS 540</h1>
+<h2>GIS Programming Fundamentals</h2>
+<p>As explained at <a href="https://courses.ncsu.edu/nr595d/common/index.html" target="_blank">https://courses.ncsu.edu/nr595d/common/index.html</a>, </p>
+<blockquote cite="https://courses.ncsu.edu/nr595d/common/index.html">
+    This course explains principles, syntax, and language elements associated with creating and running computer programming scripts. Python scripting is used to efficiently run ArcGIS tools, read text files of data and ArcGIS attribute tables, interact with map elements, manipulate batches of GIS data, and create basic user interfaces.  Assignments are preformed in Python, ArcGIS, and PythonWin. Teaching techniques incorporate hands-on learning in a stimulating, interactive classroom environment. Students completing this course will be armed to streamline GIS work-flow and build reusable applications.
+    </blockquote>
+
+    <table width="250" border="2" cellspacing="2" cellpadding="10">
+  <tbody>
+    <tr>
+      <td width="106">Semester</td>
+      <td width="90">Role</td>
+    </tr>
+    <tr>
+      <td>Spring 2016</td>
+      <td>Student</td>
+    </tr>
+    <tr>
+      <td><p>Fall 2016, <br>
+        Spring 2017,<br>
+        Fall 2017,<br>
+        Spring 2018
+      </p></td>
+      <td>Teaching Assistant</td>
+    </tr>
+  </tbody>
+</table>
+
+    <h3>Project: Curvature Analysis of Polyline Features</h3> 
+    <p>This project was presentat at the NC GIS 2017 Conference: <a href="https://youtu.be/Ohvs14ScGAo" target="_blank">Get The Kinks Out Determining Roadway Radii From PolyLines</a></p>
+    <p>The problem: When an agency such as NCDOT represents existing roadways in GIS, they use Polyline feature classes which are only sequences of line segements. Although the actual roadways have curves of specific radius (thus curvature), this information is not available in the feature classes because there are no curve elements, only lines.</p>
+    <p>The solution: This tool computes the small arcs formed by each point triplet, and writes out the Degree of Curve and the Radius of each of these arc segments to a csv file.</p>
+    <p>The RoadGeometry.py file (and associated  files) read polylines, extracting the point data from them, writing a csv file  which contains the Degree of Curve, Radius, and Direction at each point along  the polyline.  Optionally, as a check to  verify the integrity of the extracted point data, the points may be loaded back  into the map as a new polyline file.</p>
+<p>The output, a csv file, shows the Degree of Curve, the Radius, and other information about each arc segment. Here is a sample of a report from a run on Leesville Road in Raleigh, NC, near Sycamore Creek Elementary School.<br>
+<img src="../../img/CurvatureTable.png" width="696" height="329" alt=""/></p>
+<p>Here is the same location in which the radiuses are depicted as purple lines. Note how the radiuses alternate between left and right when in a roadway tangent (a straight away), and they converge to approximately the same center point at the curve, which seems to have a radius of 348.3 feet.</p>
+<p><img src="../../img/Curve Radiuses Graphic.jpg" width="684" height="357" alt=""/></p>
+<p>&nbsp;</p>
+</body>
+</html>

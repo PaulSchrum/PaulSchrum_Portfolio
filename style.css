@@ -140,9 +140,10 @@ ul {padding: 0 2em 1.2em;}
 /* misc */
 .clear,.clearer {clear: both;}
 .clearer {font-size: 0;}
-.col2 .left {width: 64%;}
+.col2 .left {width: 15%;}
+.col2 .center .content{background: #FFF;}
 .col2 .right .content {background: #FFF;}
-.col2 .right {width: 33%;}
+.col2 .right {width: 85%;}
 .content {padding: 18px 20px;}
 .left {float: left;}
 .right {float: right;}
