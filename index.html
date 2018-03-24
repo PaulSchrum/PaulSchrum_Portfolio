@@ -47,12 +47,16 @@ function navigator(idVal) {
 <div class="main" id="two-columns">
 
     <div class="col2" id="primaryContent">
-        <nav class="Left" id="sideNav" or>Content for  class "Left" id "sideNav" Goes Here</nav>
-Content for  class "col2" Goes Here
-        <table width="750">
+        <table width="850">
             <tr>
-                <td width="120"><a onClick="navigator('subsections/1Home/About.html')">Item 1</a><br>Item 2</td>
-                <td><iframe name='contentSection' id="contentSection"></iframe></td>
+                <td width="120" valign="top">
+                    <a onClick="navigator('subsections/1Home/About.html')">About</a><br>
+                    <a onClick="navigator('subsections/1Home/Resume.html')">Resume</a><br>
+                    <a onClick="navigator('subsections/1Home/CV.html')">CV</a><br>
+                </td>
+                <td width="830" height="400" valign="top">
+                    <iframe width="720" height="450" name='contentSection' id="contentSection" src="subsections/1Home/About.html"></iframe>
+                </td>
             </tr>
         </table>
     </div>
